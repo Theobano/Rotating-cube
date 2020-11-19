@@ -1,0 +1,73 @@
+/*Rotating cube.css*/
+
+.box_container {
+	display: flex;
+	height: 500px;
+	width: 500px;
+	border: green 5px solid;
+	margin: auto;
+	align-content: center;
+	perspective: 500px;
+}
+
+@keyframes rotate{
+	from{
+		transform: rotate3d(1, 1, 1, 0deg);
+	}
+	to{
+		transform: rotate3d(1, 1, 1, 360deg);
+	}
+}
+.cube {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin:auto;
+	transform-style: preserve-3d;
+	animation-duration: 5s;
+	animation-name: rotate;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.cube .square{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	border: black 2px solid;
+	text-align: center;
+	line-height: 100px;
+	font-size: 30px;
+}
+
+.cube .top{
+	background-color: rgba(255, 0, 0, 0.5);
+	transform:rotateX(90deg) translateZ(50px);
+}
+
+.cube .front{
+	background: rgba(255, 100, 0, 0.5);
+	transform: rotateY(0deg) translateZ(50px);
+	
+}
+
+.cube .left{
+	background-color: rgba(255, 0, 100, 0.5);
+	transform:rotateY(-90deg) translateZ(50px);
+}
+
+.cube .right{
+	background-color: rgba(55, 40, 80, 0.5);
+	transform:rotateY(90deg) translateZ(50px);
+}
+
+.cube .bottom{
+	background-color: rgba(190, 46, 100, 0.5);
+	transform:rotateX(-90deg) translateZ(50px);
+}
+
+.cube .back{
+	background-color: rgba(25, 200, 10, 0.5);
+	transform: rotateY(180deg) translateZ(50px);
+}
