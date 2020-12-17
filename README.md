@@ -1,2 +1,6 @@
 # Rotating cube
- Rotating cube with CSS and HTML
+ A rotating cube with CSS and HTML
+
+## Technologies
+* HTML5
+* CSS3
