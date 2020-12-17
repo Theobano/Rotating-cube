@@ -2,5 +2,5 @@
  A rotating cube with CSS and HTML
 
 ## Technologies
-* HTML5
-* CSS3
+* HTML 5
+* CSS 3
